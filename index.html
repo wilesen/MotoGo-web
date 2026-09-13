@@ -99,7 +99,7 @@ button,a{cursor:pointer}
 .nav-gh:focus-visible{outline:2px solid var(--indigo);outline-offset:2px}
 
 /* ---------- Hero ---------- */
-.hero{padding:172px 0 96px;display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}
+.hero{padding:172px 24px 96px;display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}
 .badge{display:inline-flex;align-items:center;gap:8px;padding:7px 15px;border-radius:999px;
   border:1px solid var(--glass-brd);background:rgba(255,255,255,.05);
   font-size:13px;color:var(--ink-dim);letter-spacing:.3px}
@@ -186,7 +186,7 @@ button,a{cursor:pointer}
 .sec-head p{color:var(--ink-dim);margin-top:14px;font-weight:300}
 
 /* ---------- 特性 ---------- */
-.features{padding:0 0 110px}
+.features{padding:0 24px 110px}
 .feat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
 .feat{padding:28px 26px;transition:border-color .25s,box-shadow .25s,transform .25s}
 .feat:hover{border-color:rgba(129,140,248,.45);box-shadow:0 24px 70px rgba(0,0,0,.5),0 0 0 1px rgba(129,140,248,.2),inset 0 1px 0 rgba(255,255,255,.12);transform:translateY(-3px)}
@@ -198,7 +198,7 @@ button,a{cursor:pointer}
 .feat p{font-size:14.5px;color:var(--ink-dim);font-weight:300}
 
 /* ---------- 界面预览 ---------- */
-.ui-sec{padding:0 0 110px}
+.ui-sec{padding:0 24px 110px}
 .shot{padding:10px 10px 0;overflow:hidden}
 .shot img{width:100%;height:auto;border-radius:14px;border:1px solid rgba(255,255,255,.1);display:block}
 .shot figcaption{display:flex;align-items:center;gap:12px;padding:13px 8px 14px;font-size:13.5px;color:var(--ink-dim);font-weight:300}
@@ -207,7 +207,7 @@ button,a{cursor:pointer}
 .shot-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:18px}
 
 /* ---------- 下载 ---------- */
-.dl{padding:0 0 120px}
+.dl{padding:0 24px 120px}
 .dl-card{padding:56px 40px;text-align:center;position:relative;overflow:hidden}
 .dl-card::before{content:"";position:absolute;top:-140px;left:50%;transform:translateX(-50%);width:560px;height:280px;
   background:var(--grad);opacity:.14;filter:blur(80px);pointer-events:none}
@@ -262,6 +262,16 @@ footer{border-top:1px solid rgba(255,255,255,.07);padding:38px 0 44px}
   .hero{padding-top:130px}
   .phone{width:270px;height:560px}
   .dl-card{padding:44px 22px}
+  .p-weather{padding:9px 11px}
+  .p-weather svg{width:20px;height:20px}
+  .p-weather .t{font-size:16px}
+  .p-weather .d{font-size:10px;max-width:78px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .p-eta{padding:9px 11px}
+  .p-eta .t{font-size:14px}
+  .p-music{left:10px;right:10px;bottom:88px;padding:9px 11px}
+  .p-dock{height:58px}
+  .p-dock .ic{width:36px;height:36px;border-radius:11px}
+  .p-dock .ic svg{width:16px;height:16px}
 }
 </style>
 </head>
