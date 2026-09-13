@@ -197,6 +197,15 @@ button,a{cursor:pointer}
 .feat h3{font-size:18.5px;font-weight:700;margin-bottom:9px}
 .feat p{font-size:14.5px;color:var(--ink-dim);font-weight:300}
 
+/* ---------- 界面预览 ---------- */
+.ui-sec{padding:0 0 110px}
+.shot{padding:10px 10px 0;overflow:hidden}
+.shot img{width:100%;height:auto;border-radius:14px;border:1px solid rgba(255,255,255,.1);display:block}
+.shot figcaption{display:flex;align-items:center;gap:12px;padding:13px 8px 14px;font-size:13.5px;color:var(--ink-dim);font-weight:300}
+.chip{flex:none;padding:3px 11px;border-radius:999px;font-size:12px;font-weight:500;
+  background:rgba(129,140,248,.14);border:1px solid rgba(129,140,248,.35);color:#b3baff}
+.shot-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:18px}
+
 /* ---------- 下载 ---------- */
 .dl{padding:0 0 120px}
 .dl-card{padding:56px 40px;text-align:center;position:relative;overflow:hidden}
@@ -267,6 +276,7 @@ footer{border-top:1px solid rgba(255,255,255,.07);padding:38px 0 44px}
   </a>
   <div class="nav-links">
     <a href="#features">特性</a>
+    <a href="#ui">界面</a>
     <a href="#download">下载</a>
     <a class="nav-gh" href="https://github.com/wilesen/MotoGo" target="_blank" rel="noopener">
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
@@ -390,6 +400,29 @@ footer{border-top:1px solid rgba(255,255,255,.07);padding:38px 0 44px}
     </div>
   </section>
 
+  <!-- 界面预览 -->
+  <section id="ui" class="wrap ui-sec">
+    <div class="sec-head reveal">
+      <span class="tag">REAL UI</span>
+      <h2>真实车机界面</h2>
+      <p>以下截图来自真机上运行中的 MotoGo：地图导航、音乐播放与右侧常驻信息面板。</p>
+    </div>
+    <figure class="shot glass reveal">
+      <img src="assets/screens/ui-nav.jpg" width="1600" height="720" alt="MotoGo 主界面：左侧高德地图导航与转向播报，右侧天气、音乐、行车记录面板与 Dock" loading="lazy">
+      <figcaption><span class="chip">导航主页</span>高德导航 · 转向播报 · 右侧常驻天气 / 音乐 / 记录仪面板与 Dock</figcaption>
+    </figure>
+    <div class="shot-grid">
+      <figure class="shot glass reveal">
+        <img src="assets/screens/ui-music.jpg" width="1600" height="720" alt="MotoGo 本地音乐播放列表界面" loading="lazy">
+        <figcaption><span class="chip">本地音乐</span>本地曲库扫描播放，骑行歌单一键切换</figcaption>
+      </figure>
+      <figure class="shot glass reveal">
+        <img src="assets/screens/ui-online.jpg" width="1600" height="720" alt="MotoGo 网易云在线音乐界面，热歌榜歌曲列表" loading="lazy">
+        <figcaption><span class="chip">网易云在线</span>在线热歌榜单与试听，登录可听 VIP 全曲</figcaption>
+      </figure>
+    </div>
+  </section>
+
   <!-- 下载 -->
   <section id="download" class="wrap dl">
     <div class="dl-card glass reveal">
@@ -442,6 +475,7 @@ footer{border-top:1px solid rgba(255,255,255,.07);padding:38px 0 44px}
       <a href="https://github.com/wilesen/MotoGo" target="_blank" rel="noopener">GitHub</a>
       <a href="https://github.com/wilesen/MotoGo/releases" target="_blank" rel="noopener">Releases</a>
       <a href="#features">特性</a>
+      <a href="#ui">界面</a>
       <a href="#download">下载</a>
     </div>
   </div>
