@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>MotoGo - 为骑行而生的车机导航启动器</title>
-<meta name="description" content="MotoGo 将安卓手机变成摩托车仪表台：高德导航、实时天气、本地音乐、行车记录，玻璃质感全屏车机界面。免费开源，支持 Android 12+。">
+<meta name="description" content="MotoGo 将安卓手机变成摩托车仪表台：高德导航、实时天气、本地音乐、行车记录，玻璃质感全屏车机界面。免费使用，支持 Android 12+。">
 <meta property="og:title" content="MotoGo - 为骑行而生的车机导航启动器">
-<meta property="og:description" content="高德导航 · 实时天气 · 本地音乐 · 行车记录，玻璃质感车机界面，免费开源。">
+<meta property="og:description" content="高德导航 · 实时天气 · 本地音乐 · 行车记录，玻璃质感车机界面，免费使用。">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://wilesen.github.io/MotoGo-web/">
 <meta property="og:image" content="https://wilesen.github.io/MotoGo-web/assets/icon.png">
@@ -92,11 +92,6 @@ button,a{cursor:pointer}
 .nav-links a{padding:8px 14px;border-radius:10px;font-size:14.5px;color:var(--ink-dim);transition:color .2s,background .2s}
 .nav-links a:hover{color:var(--ink);background:rgba(255,255,255,.07)}
 .nav-links a:focus-visible{outline:2px solid var(--indigo);outline-offset:2px}
-.nav-gh{display:flex;align-items:center;gap:7px;padding:8px 14px;border-radius:10px;font-size:14.5px;
-  border:1px solid var(--glass-brd);color:var(--ink);transition:border-color .2s,background .2s}
-.nav-gh:hover{border-color:rgba(255,255,255,.3);background:rgba(255,255,255,.06)}
-.nav-gh svg{width:17px;height:17px;fill:currentColor}
-.nav-gh:focus-visible{outline:2px solid var(--indigo);outline-offset:2px}
 
 /* ---------- Hero ---------- */
 .hero{padding:172px 24px 96px;display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}
@@ -115,6 +110,7 @@ button,a{cursor:pointer}
 .btn-primary:hover{filter:brightness(1.12);box-shadow:0 14px 44px rgba(129,140,248,.55)}
 .btn-ghost{border-color:var(--glass-brd);color:var(--ink);background:rgba(255,255,255,.04)}
 .btn-ghost:hover{border-color:rgba(255,255,255,.3);background:rgba(255,255,255,.08)}
+.btn-disabled{opacity:.45;cursor:not-allowed;pointer-events:none}
 .btn:focus-visible{outline:2px solid var(--indigo);outline-offset:3px}
 .btn .ver:empty{display:none}
 .btn .ver{font-size:12.5px;font-weight:400;padding:2px 9px;border-radius:999px;background:rgba(11,12,28,.18);font-family:'Space Grotesk',monospace}
@@ -257,7 +253,7 @@ footer{border-top:1px solid rgba(255,255,255,.07);padding:38px 0 44px}
   .steps{grid-template-columns:1fr}
 }
 @media (max-width:600px){
-  .nav-links a:not(.nav-gh){display:none}
+  .nav-links a{display:none}
   .feat-grid{grid-template-columns:1fr}
   .stats{grid-template-columns:repeat(2,1fr);gap:12px}
   .hero{padding-top:130px}
@@ -289,10 +285,6 @@ footer{border-top:1px solid rgba(255,255,255,.07);padding:38px 0 44px}
     <a href="#features">特性</a>
     <a href="#ui">界面</a>
     <a href="#download">下载</a>
-    <a class="nav-gh" href="https://github.com/wilesen/MotoGo" target="_blank" rel="noopener">
-      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
-      GitHub
-    </a>
   </div>
 </nav>
 
@@ -300,7 +292,7 @@ footer{border-top:1px solid rgba(255,255,255,.07);padding:38px 0 44px}
   <!-- Hero -->
   <header class="wrap hero">
     <div class="reveal">
-      <span class="badge"><span class="dot"></span>开源免费 · Android 12+ · arm64 / armv7</span>
+      <span class="badge"><span class="dot"></span>免费使用 · Android 12+ · arm64 / armv7</span>
       <h1>把手机变成<br>你的<span class="grad-text">摩托车仪表台</span></h1>
       <p class="sub">MotoGo 是专为骑行打造的车机导航启动器：高德导航、实时天气、本地音乐、行车记录，尽在一块玻璃质感的全屏界面中，出发即启程。</p>
       <div class="cta-row">
@@ -308,10 +300,10 @@ footer{border-top:1px solid rgba(255,255,255,.07);padding:38px 0 44px}
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
           下载 APK <span class="ver" data-apk-version></span>
         </a>
-        <a class="btn btn-ghost" href="https://github.com/wilesen/MotoGo" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
-          GitHub 源码
-        </a>
+        <span class="btn btn-ghost btn-disabled" aria-disabled="true" title="iOS 版开发中，敬请期待">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
+          iOS 版 · 敬请期待
+        </span>
       </div>
     </div>
 
@@ -367,7 +359,7 @@ footer{border-top:1px solid rgba(255,255,255,.07);padding:38px 0 44px}
     <div class="stat glass"><div class="v" data-apk-version>—</div><div class="k">当前版本</div></div>
     <div class="stat glass"><div class="v">12+</div><div class="k">Android 系统要求</div></div>
     <div class="stat glass"><div class="v">2</div><div class="k">支持 ABI 架构</div></div>
-    <div class="stat glass"><div class="v">100%</div><div class="k">免费开源</div></div>
+    <div class="stat glass"><div class="v">100%</div><div class="k">免费使用</div></div>
   </section>
 
   <!-- 特性 -->
@@ -450,6 +442,10 @@ footer{border-top:1px solid rgba(255,255,255,.07);padding:38px 0 44px}
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
           下载最新 APK
         </a>
+        <span class="btn btn-ghost btn-disabled" aria-disabled="true" title="iOS 版开发中，敬请期待">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
+          iOS 版 · 敬请期待
+        </span>
         <a class="btn btn-ghost" href="https://github.com/wilesen/MotoGo-web/releases" target="_blank" rel="noopener">查看历史版本</a>
       </div>
       <div class="steps">
@@ -483,7 +479,6 @@ footer{border-top:1px solid rgba(255,255,255,.07);padding:38px 0 44px}
       </div>
     </div>
     <div class="foot-links">
-      <a href="https://github.com/wilesen/MotoGo" target="_blank" rel="noopener">GitHub</a>
       <a href="https://github.com/wilesen/MotoGo-web/releases" target="_blank" rel="noopener">Releases</a>
       <a href="#features">特性</a>
       <a href="#ui">界面</a>
