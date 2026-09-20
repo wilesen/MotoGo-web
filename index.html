@@ -591,6 +591,20 @@ footer{border-top:1px solid rgba(255,255,255,.07);padding:38px 0 44px}
     </div>
   </div>
   <div class="wrap note" style="margin-top:22px;font-size:12.5px">© 2026 MotoGo · 本项目仅供学习交流使用，地图与导航服务由高德开放平台提供</div>
+<script>
+(function(){
+  var CDN='https://canirunai.site/release/MotoGo_1.40.b44.apk';
+  document.querySelectorAll('[data-apk-link]').forEach(function(a){a.href=CDN});
+  document.querySelectorAll('[data-apk-version]').forEach(function(el){el.textContent='1.40'});
+  document.querySelectorAll('[data-apk-size]').forEach(function(el){el.textContent='67.9 MB'});
+  document.querySelectorAll('[data-apk-date]').forEach(function(el){el.textContent='2026年9月20日'});
+  var els=document.querySelectorAll('.reveal');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:0.12});
+    els.forEach(function(el){io.observe(el)});
+  } else { els.forEach(function(el){el.classList.add('in')}); }
+})();
+</script>
 </footer>
 
 </body>
