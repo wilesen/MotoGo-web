@@ -680,8 +680,8 @@ footer{border-top:1px solid rgba(255,255,255,.07);padding:38px 0 44px}
     <div class="log-card glass reveal">
       <div class="log-ver">
         <span class="v grad-text">v1.41</span>
-        <span class="log-badge badge-soon">即将更新</span>
-        <span class="log-date">敬请期待</span>
+        <span class="log-badge">已推送</span>
+        <span class="log-date">2026-10-16</span>
       </div>
       <div class="log-group">一、地图模块</div>
       <ul class="log-list">
@@ -780,16 +780,16 @@ footer{border-top:1px solid rgba(255,255,255,.07);padding:38px 0 44px}
   <!-- 下载 -->
   <section id="download" class="wrap dl">
     <div class="dl-card glass reveal">
-      <div class="dl-ver">LATEST RELEASE · <b>1.40 (b49)</b></div>
+      <div class="dl-ver">LATEST RELEASE · <b>1.41 (b50)</b></div>
       <h2>下载 <span class="grad-text">MotoGo</span></h2>
       <p class="desc">从官方 CDN 获取最新版本 APK，免费下载，无需注册。目前支持各类型号的手机、平板等 Android 设备。</p>
       <div class="dl-meta">
         <span><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg>Android 10+</span>
         <span data-apk-size-wrap><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg><span>68.9 MB</span></span>
-        <span data-apk-date-wrap><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg><span>2026年9月27日</span></span>
+        <span data-apk-date-wrap><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg><span>2026年10月16日</span></span>
       </div>
       <div class="dl-btns">
-        <a class="btn btn-primary" data-apk-link href="https://github.com/wilesen/MotoGo-web/releases/download/v1.40/MotoGo_1.40.apk" target="_blank" rel="noopener">
+        <a class="btn btn-primary" data-apk-link href="https://github.com/wilesen/MotoGo-web/releases/download/v1.41/MotoGo_1.41.apk" target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
           下载最新 APK
         </a>
@@ -896,11 +896,11 @@ footer{border-top:1px solid rgba(255,255,255,.07);padding:38px 0 44px}
   </div>
 <script>
 (function(){
-  var CDN='https://github.com/wilesen/MotoGo-web/releases/download/v1.40/MotoGo_1.40.apk';
+  var CDN='https://github.com/wilesen/MotoGo-web/releases/download/v1.41/MotoGo_1.41.apk';
   document.querySelectorAll('[data-apk-link]').forEach(function(a){a.href=CDN});
-  document.querySelectorAll('[data-apk-version]').forEach(function(el){el.textContent='1.40'});
+  document.querySelectorAll('[data-apk-version]').forEach(function(el){el.textContent='1.41'});
   document.querySelectorAll('[data-apk-size]').forEach(function(el){el.textContent='68.9 MB'});
-  document.querySelectorAll('[data-apk-date]').forEach(function(el){el.textContent='2026年9月27日'});
+  document.querySelectorAll('[data-apk-date]').forEach(function(el){el.textContent='2026年10月16日'});
   var els=document.querySelectorAll('.reveal');
   if('IntersectionObserver' in window){
     var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:0.12});
