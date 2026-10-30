@@ -134,6 +134,8 @@ button,a{cursor:pointer}
 .faq-a p{margin:0 0 10px}
 .faq-a p:last-child{margin-bottom:0}
 .faq-a strong{color:var(--ink);font-weight:600}
+.faq-a a{color:var(--blue);text-decoration:underline;text-underline-offset:3px}
+.faq-a a:hover{color:var(--indigo)}
 @media(max-width:600px){
   .faq-q{padding:14px 16px;font-size:14px}
   .faq-a{padding:0 16px 16px;font-size:13px}
@@ -679,6 +681,33 @@ footer{border-top:1px solid rgba(255,255,255,.07);padding:38px 0 44px}
 
     <div class="log-card glass reveal">
       <div class="log-ver">
+        <span class="v grad-text">v1.42</span>
+        <span class="log-badge">已推送</span>
+        <span class="log-date">2026-10-29</span>
+      </div>
+      <div class="log-group">一、Turbo 导航</div>
+      <ul class="log-list">
+        <li>导航画面切换为官方导航组件透明叠加：路线、车标、转向大图、红绿灯读秒与限速全部官方渲染，画面更原生更流畅</li>
+        <li>车标画面正中展示（支持运行时微调标定）</li>
+        <li>新增拖动屏幕查看路线，松手 5 秒无操作自动恢复锁车跟随</li>
+        <li>码表速度数据源修复，模拟导航下同样实时显示</li>
+        <li>退出 Turbo 导航新增语音提示（腾讯云 TTS）</li>
+      </ul>
+      <div class="log-group">二、音乐模块</div>
+      <ul class="log-list">
+        <li>不再需要选择音源：任意音乐 App 播放即可自动回显歌曲与播放控制</li>
+        <li>新增歌词显示：自动匹配当前歌曲并随进度实时滚动</li>
+        <li>设置页精简音源选择入口，未开权限时引导开启通知使用权</li>
+      </ul>
+      <div class="log-group">三、其他</div>
+      <ul class="log-list">
+        <li>新增导航途中最大压弯 / 最大翘头统计与长按重置</li>
+        <li>行车记录仪录像失败自动上报，助力机型兼容性修复</li>
+        <li>修复若干问题，建议更新</li>
+      </ul>
+    </div>
+    <div class="log-card glass reveal">
+      <div class="log-ver">
         <span class="v grad-text">v1.41</span>
         <span class="log-badge">已推送</span>
         <span class="log-date">2026-10-16</span>
@@ -780,7 +809,7 @@ footer{border-top:1px solid rgba(255,255,255,.07);padding:38px 0 44px}
   <!-- 下载 -->
   <section id="download" class="wrap dl">
     <div class="dl-card glass reveal">
-      <div class="dl-ver">LATEST RELEASE · <b>1.41 (b50)</b></div>
+      <div class="dl-ver">LATEST RELEASE · <b>1.42 (b51)</b></div>
       <h2>下载 <span class="grad-text">MotoGo</span></h2>
       <p class="desc">从官方 CDN 获取最新版本 APK，免费下载，无需注册。目前支持各类型号的手机、平板等 Android 设备。</p>
       <div class="dl-meta">
@@ -789,7 +818,7 @@ footer{border-top:1px solid rgba(255,255,255,.07);padding:38px 0 44px}
         <span data-apk-date-wrap><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg><span>2026年10月16日</span></span>
       </div>
       <div class="dl-btns">
-        <a class="btn btn-primary" data-apk-link href="https://github.com/wilesen/MotoGo-web/releases/download/v1.41/MotoGo_1.41.apk" target="_blank" rel="noopener">
+        <a class="btn btn-primary" data-apk-link href="https://github.com/wilesen/MotoGo-web/releases/download/v1.42/MotoGo_1.42_dpt_signed.apk" target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
           下载最新 APK
         </a>
@@ -856,6 +885,20 @@ footer{border-top:1px solid rgba(255,255,255,.07);padding:38px 0 44px}
         <summary class="faq-q"><span>激活码发放规则以及时间</span><svg class="faq-caret" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
         <div class="faq-a"><p>激活码<strong>每周一 10:00 定量发放 500 个</strong>，领取方式参考官网「获取激活码方式」模块。</p><p>小程序奖池在每周一 10:00 准时补充激活码，等待<strong>群主通知</strong>后开始抽奖，<strong>过早或过晚都抽不到</strong>，请注意时间。</p></div>
       </details>
+      <details class="faq-item glass">
+        <summary class="faq-q"><span>如何使用屏幕镜像</span><svg class="faq-caret" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
+        <div class="faq-a">
+          <p>屏幕镜像功能已内置在 MotoGo APP 中，首次使用前需要先开启 <strong>Shizuku</strong> 并完成授权，流程如下：</p>
+          <p><strong>第一步：下载并安装 Shizuku</strong></p>
+          <p>访问 Shizuku 官网下载最新版：<a href="https://shizuku.rikka.app/zh-hans/download/" target="_blank" rel="noopener">https://shizuku.rikka.app/zh-hans/download/</a>，安装到车机所在设备。</p>
+          <p><strong>第二步：开启 Shizuku</strong></p>
+          <p>① Android 11 及以上：进入系统「开发者选项」开启「无线调试」，在 Shizuku 中按提示完成「无线调试配对」并启动；</p>
+          <p>② 或将设备连接电脑，通过 ADB 执行 Shizuku 内展示的启动命令开启；</p>
+          <p>③ 启动成功后 Shizuku 显示「运行中」。注意：设备重启后 Shizuku 会停止，需重新执行上述启动步骤。</p>
+          <p><strong>第三步：在 MotoGo 中开启屏幕镜像</strong></p>
+          <p>打开 MotoGo APP → 进入「屏幕镜像」功能，按提示允许 Shizuku 授权弹窗，即可开始使用屏幕镜像。</p>
+        </div>
+      </details>
     </div>
   </section>
 
@@ -896,7 +939,7 @@ footer{border-top:1px solid rgba(255,255,255,.07);padding:38px 0 44px}
   </div>
 <script>
 (function(){
-  var CDN='https://github.com/wilesen/MotoGo-web/releases/download/v1.41/MotoGo_1.41.apk';
+  var CDN='https://github.com/wilesen/MotoGo-web/releases/download/v1.42/MotoGo_1.42_dpt_signed.apk';
   document.querySelectorAll('[data-apk-link]').forEach(function(a){a.href=CDN});
   document.querySelectorAll('[data-apk-version]').forEach(function(el){el.textContent='1.41'});
   document.querySelectorAll('[data-apk-size]').forEach(function(el){el.textContent='68.9 MB'});
